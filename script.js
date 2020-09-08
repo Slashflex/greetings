@@ -1,8 +1,18 @@
-import React from 'react';
-import {render} from 'react-dom';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 
-function App() {
-    return <h1>Hello World</h1>
+export default class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            message: "Hello world !!!"
+        }
+    }
+    render() {
+        let {message} = this.state;
+
+        return <h1>{message}</h1>
+    }
 }
 
 render(

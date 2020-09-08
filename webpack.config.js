@@ -3,6 +3,7 @@ const {resolve} = require('path');
 module.exports = {
   entry: resolve('./script.js'),
   mode: 'development',
+  watch: true,
   output: {
     path: resolve('./'),
     filename: './dist/bundle.min.js'
