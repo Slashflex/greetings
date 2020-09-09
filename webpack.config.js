@@ -1,7 +1,8 @@
 const {resolve} = require('path');
 
 module.exports = {
-  entry: resolve('./script.js'),
+  entry: resolve('./script.js') 
+  ,
   mode: 'development',
   watch: true,
   output: {
@@ -28,14 +29,14 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //     },
+      //   ],
+      // },
       {
         test: /\.s[ac]ss$/i,
         use: [
